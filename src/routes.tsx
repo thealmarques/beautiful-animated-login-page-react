@@ -7,6 +7,8 @@ import {
 } from 'react-router-dom';
 import Login from './components/login/login';
 import { State } from './shared/models/state.models';
+import AuthenticatedRoute from './shared/authentication/authenticated-route';
+import Dashboard from './components/dashboard/dashboard';
 
 interface Props {
     username: string;
@@ -17,12 +19,13 @@ class AppRouter extends React.Component<Props> {
         return (
             <Router>
                 <Switch>
-                    <Route path="/dashboard">
-                        <div>{this.props.username}</div>
-                    </Route>
-                    <Route path="/">
-                        <Login />
-                    </Route>
+                    <Route path="/" exact component={Login}></Route>
+                    <AuthenticatedRoute
+                        path="/dashboard"
+                        isAuthenticated={this.props.username.trim().length > 0}
+                        component={Dashboard}
+                        redirectTo={"/"}>
+                    </AuthenticatedRoute>
                 </Switch>
             </Router>
         );

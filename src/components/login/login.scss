@@ -1,0 +1,14 @@
+.login {
+    display: flex;
+    height: 100%;
+
+    &__welcome-container {
+        width: 30%;
+        background-color: red;
+    }
+    
+    &__create-container {
+        width: 70%;
+        background-color: blue;
+    }
+}
