@@ -6,6 +6,25 @@ body {
   margin: 0;
 }
 
+input {
+  outline: none;
+  border: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aeaeae;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #aeaeae;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #aeaeae;
+}
+
+
 * {
   box-sizing: border-box;
 }
