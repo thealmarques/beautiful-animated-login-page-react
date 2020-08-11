@@ -13,7 +13,7 @@ interface Props extends RouteComponentProps {
     setUserType(username: string): void
 };
 
-class Login extends React.Component<Props, {}> {
+class Login extends React.Component<Props> {
     state = {
         login: true,
         signUpForm: {

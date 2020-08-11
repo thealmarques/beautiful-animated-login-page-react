@@ -7,7 +7,6 @@ export const userInitialState: User = {
 }
 
 export const userState = (state: User = userInitialState, action: Action | any): User => {
-    console.log(action.type);
     switch (action.type) {
         case setUserType:
             return {
