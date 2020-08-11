@@ -1,0 +1,27 @@
+/*
+* Colors
+*/
+$base-color: #986060;
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Quicksand-Bold';
+    font-size: 30px;
+    color: $base-color;
+
+    &--button {
+        margin-top: 20px;
+        color: white;
+        background-color: $base-color;
+        border: solid 2px white;
+        width: 10%;
+        height: 45px;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
