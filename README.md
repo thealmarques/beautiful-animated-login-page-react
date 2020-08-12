@@ -3,7 +3,7 @@ This project is an implementation of the most known streaming platforms in the w
 
 ## Demo
 
-<img src="resources/login_demo.gif" height="50%" width="80%"/>
+<img src="resources/login_demo.gif" height="60%" width="100%"/>
 
 ## Technologies
 
