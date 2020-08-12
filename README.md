@@ -29,7 +29,7 @@ npm start
 
 ## Todo
 
-[] Refactor ssass classes
+[] Refactor scss classes
 
 [] Adapt interface to mobile
 
