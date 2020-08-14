@@ -26,6 +26,7 @@ class Login extends React.Component<Props> {
             password: ""
         }
     };
+
     render() {
         return (
             <div className="login">

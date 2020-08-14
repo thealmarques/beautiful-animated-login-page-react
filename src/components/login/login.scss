@@ -4,6 +4,11 @@
 $base-color: #986060;
 
 /*
+* Media queries helper
+*/
+$breakpoint-mobile: 768px;
+
+/*
 * Classes (ampersand + BEM)
 */
 .login {
@@ -41,6 +46,11 @@ $base-color: #986060;
                 height: 38px;
                 margin-right: 4px;
             }
+
+            @media (max-width: $breakpoint-mobile) {
+                font-size: 0px;
+                justify-content: center;
+            }
         }
 
         &__main-container {
@@ -69,6 +79,10 @@ $base-color: #986060;
                     font-weight: lighter;
                     font-family: 'Quicksand-Regular';
                 }
+
+                @media (max-width: $breakpoint-mobile) {
+                    display: none;
+                }
             }
 
             &__button-container {
@@ -83,6 +97,10 @@ $base-color: #986060;
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
+
+                @media (max-width: $breakpoint-mobile) {
+                    font-size: 3vw;
+                }
             }
         }
     }
@@ -161,6 +179,10 @@ $base-color: #986060;
                     background-color: #f1f1f1;
                     margin-bottom: 10px;
                     color: #242424;
+
+                    @media (max-width: $breakpoint-mobile) {
+                        width: 50vw;
+                    }
                 }
 
                 &--name {
